@@ -53,3 +53,22 @@ const person = {
     last: 'bos',
     age: 100
 };
+
+let dog;
+console.log(dog);
+dog = 'snikers';
+
+let somethingUndefined;
+const somethingNull = null;
+
+const cher = {
+    first: 'cher'
+}
+
+const teller = {
+    first: 'Raymond',
+    last: 'Teller'
+}
+
+teller.first = 'Teller';
+teller.last = null;
