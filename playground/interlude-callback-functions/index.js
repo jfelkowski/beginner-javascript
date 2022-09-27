@@ -37,11 +37,11 @@ function add1(n) {
 
 // myForEach([1, 2, 3], add1);
 
-function logNumber(number) {
-  console.log(number);
-}
+// function logNumber(number) {
+//   console.log(number);
+// }
 
-[1, 2, 3].forEach(logNumber);
+// [1, 2, 3].forEach(logNumber);
 
 const numbers = [1, 2, 3];
 function logNumber(number) {
