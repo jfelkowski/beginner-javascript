@@ -49,15 +49,6 @@
       })
       .catch(handleError)
 
-      const p1 = makePizza(['pep']);
-      const p2 = makePizza(['pineapple']);
-
-      const dinnerPromise2 = Promise.allSettled([p1,p2]);
-
-      dinnerPromise2.then(results => {
-        console.log(results);
-      })
-
     // console.log('Right after');
 
     // run them Concurrently
@@ -85,14 +76,18 @@
 
     makePizza(['cheese', 'pineapple'])
       .then(pizza => {
-      console.log(pizza);
+        console.log(pizza);
       }).catch(handleError)
 
 
+    const p1 = makePizza(['pep']);
+    const p2 = makePizza(['pineapple']);
 
+    const dinnerPromise2 = Promise.allSettled([p1,p2]);
 
-
-
+    dinnerPromise2.then(results => {
+      console.log(results);
+    })
   </script>
 </body>
 
