@@ -3,4 +3,4 @@ import { jokeButton } from './lib/elements.js';
 
 jokeButton.addEventListener('click', handleClick);
 
-console.log('heyy');
+// console.log('heyy');
